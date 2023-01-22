@@ -2,6 +2,58 @@
 	font-family: Arial;
 }
 
+/* Add the same emoji color to the background color of the top navigation */
+.topNavigation {
+    background-color: #EAEFF9;
+    overflow: hidden;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topNavigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/* Change the color of links on hover */
+.topNavigation a:hover {
+    background-color: #002145;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topNavigation a.active {
+    background-color: #FFC645;
+    color: black;
+}
+
+
+
+
+.about {
+    margin-top: 60px;
+    text-align: center;
+	color: black;
+}
+
+.name {
+	font-family: copperplate;
+	font-size: 70px;
+}
+
+/* .description {
+	font-family: copperplate;
+	font-size: 20px;
+} */
+
+
+
 .button {
 	background: white;
 	color: white;
@@ -33,7 +85,7 @@
   .addnote {
 	background: white;
 	color: #0b3851;
-	outline: 2px solid #0b3851;
+	/* outline: 2px solid #0b3851; */
 	display: block;
 	height: 70px;
 	width: 70px;

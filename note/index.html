@@ -3,15 +3,26 @@
 <head>
  
   <title>Social Diary</title>
-        <meta charset="UTF-8" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 
 
 
 </head>
 
+<div class="topNavigation">
+  <a class="active" href="#home">Home</a>
+  <a href="#abiut">About </a>
+  <a href="#contact">Contact</a>
+  <a href="logIn">CWL Login</a>
+</div>
 
 <body>
+
+  <div class="about">
+    <h1 class="name">Social Diary</h1>
+    <p class="description">We're currently living in a time where people have never felt more isolated and alone. Thus, we created Social Diary, a community where people can anonymously share their struggles and support each other so that none of us feel alone. Social Diary provides a safe platform for anyone who needs to express their emotions, tell a story, or maybe share an experience that brightened up your day.</p>
+  </div>
 
   <a class="addnote" href='https://www.freecodecamp.org/'>+</a>
 
@@ -43,15 +54,31 @@
 
 
 body {
-background-color:black;
 display:flex;
 flex-flow:row wrap;
-justify-content:center;
-margin:0;
-height:100vh;
+/* justify-content:center; */
+/* margin:0; */
+/* height:100vh; */
 align-items:center;
 align-content:center;
-padding:0 8rem;
+/* padding:0 8rem; */
+
+background: linear-gradient(-45deg, #e8dff5, #f598a8, #fcf4dd, #b3dbd3, #69b7eb);
+background-size: 400% 400%;
+animation: gradient 20s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .thought {
