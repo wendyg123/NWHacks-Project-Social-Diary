@@ -1,9 +1,352 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <div>
+  <!-- <div> -->
 
-    <style> 
+
+    <div class="thought">This is a thought bubble.</div>
+<div class="thought1">I have cats.</div>
+<div class="thought2">This is a CodePen on the internet.</div>
+<div class="thought3">Qui inventore asperiores ipsum asperiores. Ullam voluptas quia quia voluptatem accusantium iste corrupti. Voluptatum deserunt vitae inventore.</div>
+<div class="thought4">This is another thought bubble.</div>
+<div class="thought5">I would walk a thousand miles just to see if you put your name in the Goblet of Fire, Harry.</div>
+<div class="thought6">Today I feel very happy.</div>
+
+<style>
+
+
+body {
+	background-color:black;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	margin:0;
+	height:100vh;
+	align-items:center;
+	align-content:center;
+	padding:0 8rem;
+  }
+  
+  .thought {
+	display:flex;
+	background-color:#EBEFF8;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought:before,
+  .thought:after {
+	content:"";
+	background-color:#EBEFF8;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #EBEFF8;
+  }
+  .thought:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #EBEFF8,
+			   -28px -6px 0 -2px #EBEFF8,
+			   -24px 17px 0 -6px #EBEFF8,
+			   -5px 25px 0 -10px #EBEFF8;
+	
+  }
+
+  .thought1 {
+	display:flex;
+	background-color:#EEDDB7;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought1:before,
+  .thought1:after {
+	content:"";
+	background-color:#EEDDB7;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought1:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #EEDDB7;
+  }
+  .thought1:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #EEDDB7,
+			   -28px -6px 0 -2px #EEDDB7,
+			   -24px 17px 0 -6px #EEDDB7,
+			   -5px 25px 0 -10px #EEDDB7;
+	
+  }
+
+  .thought2 {
+	display:flex;
+	background-color:#BFC9A9;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought2:before,
+  .thought2:after {
+	content:"";
+	background-color:#BFC9A9;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought2:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #BFC9A9;
+  }
+  .thought2:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #BFC9A9,
+			   -28px -6px 0 -2px #BFC9A9,
+			   -24px 17px 0 -6px #BFC9A9,
+			   -5px 25px 0 -10px #BFC9A9;
+	
+  }
+
+  .thought3 {
+	display:flex;
+	background-color:#E1D1CF;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought3:before,
+  .thought3:after {
+	content:"";
+	background-color:#E1D1CF;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought3:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #E1D1CF;
+  }
+  .thought3:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #E1D1CF,
+			   -28px -6px 0 -2px #E1D1CF,
+			   -24px 17px 0 -6px #E1D1CF,
+			   -5px 25px 0 -10px #E1D1CF;
+	
+  }
+
+  .thought4 {
+	display:flex;
+	background-color:#F9DB78;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought4:before,
+  .thought4:after {
+	content:"";
+	background-color:#F9DB78;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought4:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #F9DB78;
+  }
+  .thought4:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #F9DB78,
+			   -28px -6px 0 -2px #F9DB78,
+			   -24px 17px 0 -6px #F9DB78,
+			   -5px 25px 0 -10px #F9DB78;
+	
+  }
+
+  .thought5 {
+	display:flex;
+	background-color:#8EB7AD;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought5:before,
+  .thought5:after {
+	content:"";
+	background-color:#8EB7AD;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought5:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #8EB7AD;
+  }
+  .thought5:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #8EB7AD,
+			   -28px -6px 0 -2px #8EB7AD,
+			   -24px 17px 0 -6px #8EB7AD,
+			   -5px 25px 0 -10px #8EB7AD;
+	
+  }
+
+  .thought6 {
+	display:flex;
+	background-color:#E4A7AC;
+	padding:20px;
+	border-radius:30px;
+	min-width:40px;
+	max-width:220px;
+	min-height:40px;
+	margin:20px;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+  font-family: Arial;
+
+  }
+
+  .thought6:before,
+  .thought6:after {
+	content:"";
+	background-color:#E4A7AC;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index:-1;
+  }
+  .thought6:before {
+	width:44px;
+	height:44px;
+	top:-12px;
+	left:28px;
+	box-shadow:-50px 30px 0 -12px #E4A7AC;
+  }
+  .thought6:after {
+	bottom:-10px;
+	right:26px;
+	width:30px;
+	height:30px;
+	box-shadow:40px -34px 0 0 #E4A7AC,
+			   -28px -6px 0 -2px #E4A7AC,
+			   -24px 17px 0 -6px #E4A7AC,
+			   -5px 25px 0 -10px #E4A7AC;
+	
+  }
+
+
+</style>
+    <!-- <style> 
+
+    
       textarea {
         width: 150px;
         height: 150px;
@@ -16,40 +359,29 @@
         resize: none;
       }
       
-      textarea1 {
-        width: 250px;
-        height: 250px;
-        padding: 20px 40px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: blue;
-        font-size: 16px;
-        resize: none;
-      }
+      
       </style>
 
-  </div>
+<textarea rows="1" cols="30">Hello World</textarea><br/>
+<textarea rows="2" cols="40">Hello Second World</textarea><br/> -->
+
+  <!-- </div> -->
 
 
 </head>
 <body>
 
-<div class="textarea"> 
-  <style>
-      
-  </style>
-  
-</div>
+
+
   
 
-<h2>note-page</h2>
-
+<!-- <h2>note-page</h2> -->
+<!-- 
 <form>
   <textarea>type how you're feeling here!</textarea>
 </form>
 
       
 
-</body>
+</body> -->
 </html>

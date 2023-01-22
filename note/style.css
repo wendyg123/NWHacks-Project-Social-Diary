@@ -2,21 +2,7 @@
 	font-family: Arial;
 }
 
-body {
-	background: blueviolet;
-}
-
-.box {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 10px 2em;
-  }
-  
-  .box :first-child {
-	  align-self: center;
-  }
-
-  .textarea {
+  /* .textarea {
 	width: 150px;
 	height: 150px;
 	padding: 12px 20px;
@@ -26,9 +12,9 @@ body {
 	background-color: #EFDEB8;
 	font-size: 16px;
 	resize: none;
-  }
+  } */
 
-  textarea1 {
+  /* textarea1 {
 	width: 250px;
 	height: 250px;
 	padding: 20px 40px;
@@ -38,7 +24,7 @@ body {
 	background-color: blue;
 	font-size: 16px;
 	resize: none;
-  }
+  } */
 		
 
 
