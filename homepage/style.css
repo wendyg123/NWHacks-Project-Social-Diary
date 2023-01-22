@@ -8,7 +8,12 @@
     overflow: hidden;
 }
 
-
+img {
+	margin: 0.5%;
+	border-radius: 50%;
+	width: 30%;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
 
 /* Style the links inside the navigation bar */
 .topNavigation a {
