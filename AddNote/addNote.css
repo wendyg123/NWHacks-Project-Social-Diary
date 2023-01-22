@@ -1,6 +1,54 @@
+/* Add the same emoji color to the background color of the top navigation */
+.topNavigation {
+    background-color: #EAEFF9;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topNavigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Change the color of links on hover */
+.topNavigation a:hover {
+    background-color: #002145;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topNavigation a.active {
+    background-color: #FFC645;
+    color: black;
+}
+
+
 body {
-    background: #368dda;
-    font-family: comic sans ms, cursive;
+    /* background: #368dda; */
+
+    background: linear-gradient(-45deg, #e8dff5, #f598a8, #fcf4dd, #b3dbd3, #69b7eb);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+
+
+    font-family: copperplate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 img {
@@ -25,7 +73,7 @@ img {
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
-    outline: 2px solid #0a608e;
+    outline: 2px solid #002145;
 }
 
 /* Setting color of emotion buttons */
@@ -77,6 +125,9 @@ img {
     font-size: 30px;
 } 
 
+#emotion {
+    font-weight: bold;
+}
 
 
 .thought {
