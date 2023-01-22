@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Social Diary</title>
+        <meta charset="UTF-8" />
+        <link href="addNote.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="color">
+            <p class="choose_color">Choose Your Color:</p>
+
+            <button class="color_button" onclick="assignEmotion('hopeful')">Hopeful</button>
+            <button class="color_button" onclick="assignEmotion('sad')">Sad</button>
+            <button class="color_button" onclick="assignEmotion('lonely')">Lonely</button>
+            <button class="color_button" onclick="assignEmotion('hopeless')">Hopeless</button>
+            <button class="color_button" onclick="assignEmotion('stressed')">Stressed</button>
+            <button class="color_button" onclick="assignEmotion('angry')">Angry</button>
+        </div><br><br>
+
+        <form class="story" action="HomePage/homepage.html">
+            <label class="prompt_story">What's your story?</label><br>
+            <p class="story_beginning">I feel <span id="emotion">___________</span> because...</p>
+            <input type="text" id="inputted_story" name="inputted_story"><br><br>
+
+            <input type="submit" value="Post">
+        </form>
+
+        <script src="addNote.js"></script>
+    </body>
+</html>
