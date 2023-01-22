@@ -6,43 +6,42 @@ body {
 	background: blueviolet;
 }
 
+.box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px 2em;
+  }
+  
+  .box :first-child {
+	  align-self: center;
+  }
+
+  .textarea {
+	width: 150px;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #EFDEB8;
+	font-size: 16px;
+	resize: none;
+  }
+
+  textarea1 {
+	width: 250px;
+	height: 250px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: blue;
+	font-size: 16px;
+	resize: none;
+  }
+		
 
 
-
-
-.about {
-	margin-top: 60px; /* Adds spacing above the container */
-}
-
-
-
-.name {
-	text-align: center; /* Aligns our text in the center */
-}
-
-.button {
-	background: white;
-	color: black; /* text colour */
-	display: block; /* Makes each button on it's own line */
-	height: 60px;
-	width: 400px;
-	border-radius: 20px; 
-	margin: 20px auto; /* Adds spacing to the button and centers it */
-	text-decoration: none; /* Removes underline from hyperlink */
-	text-align: center;
-	font-weight: bold; /* Bolds the text */
-	line-height: 60px; /* Vertically aligns the text */
-	font-size: 20px;
-}
-
-.button_icon {
-	position: relative; /* Allows us to reposition our elements */
-	float: left; /* Moves our image to the left without affecting the elements relative to it */
-	width: 25px;
-	height: 25px;
-	left: 50px; /* Moves the image left by 50px */
-	top: 15px; /* Moves the image down by 15px to align it vertically */
-}
 
 
 
