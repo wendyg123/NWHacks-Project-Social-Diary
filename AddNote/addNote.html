@@ -7,28 +7,27 @@
     </head>
 
     <body>
-        <div class="color">
+        <div class="color" style="text-align: center;">
             <img src="Images/default.png" alt="defaultFace">
+            <br><br><br>
+            <p class="choose_color">How do you feel?</p>
 
-            <p class="choose_color">Choose Your Color:</p>
+            <button class="color_button" id="hopeful" onclick="assignEmotion('hopeful')">Hopeful</button>
+            <button class="color_button" id="sad" onclick="assignEmotion('sad')">Sad</button>
+            <button class="color_button" id="lonely" onclick="assignEmotion('lonely')">Lonely</button>
+            <button class="color_button" id="hopeless" onclick="assignEmotion('hopeless')">Hopeless</button>
+            <button class="color_button" id="stressed" onclick="assignEmotion('stressed')">Stressed</button>
+            <button class="color_button" id="angry" onclick="assignEmotion('angry')">Angry</button>
+            <button class="color_button" id="anxious" onclick="assignEmotion('anxious')">Anxious</button>
+            <button class="color_button" id="worried" onclick="assignEmotion('worried')">Worried</button>
+        </div>
 
-            <button class="color_button" onclick="assignEmotion('hopeful')">Hopeful</button>
-            <button class="color_button" onclick="assignEmotion('sad')">Sad</button>
-            <button class="color_button" onclick="assignEmotion('lonely')">Lonely</button>
-            <button class="color_button" onclick="assignEmotion('hopeless')">Hopeless</button>
-            <button class="color_button" onclick="assignEmotion('stressed')">Stressed</button>
-            <button class="color_button" onclick="assignEmotion('angry')">Angry</button>
-            <button class="color_button" onclick="assignEmotion('anxious')">Anxious</button>
-            <button class="color_button" onclick="assignEmotion('worried')">Worried</button>
-        </div><br><br>
-
-        <form class="story" action="HomePage/homepage.html">
-            <label class="prompt_story">What's your story?</label><br>
-            <p class="story_beginning">I feel <span id="emotion">___________</span> because...</p>
-            <input type="text" id="inputted_story" name="inputted_story"><br><br>
-
-            <input type="submit" value="Post">
-        </form>
+        <div class="story" style="text-align: center;">
+            <p class="story_prompt">I feel <span id="emotion">  ________  </span> because ...</p>
+            <div class="thought" contenteditable></div>
+            <!-- Need to put the link to home page in below button -->
+            <a class="post" href="TODO put a link here to forum page"  target="_blank">Post</a>
+        </div>
 
         <script src="addNote.js"></script>
     </body>
