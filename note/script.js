@@ -1,8 +1,4 @@
-{/* <body>
-  <h1>Create Textbox element using JavaScript</h1>
-  <script>
-    const input = document.createElement("input");
-    input.setAttribute("type", "text");
-    document.body.appendChild(input);
-  </script>
-</body> */}
+function increment() {
+	score_element = document.getElementById("score");
+	score_element.innerHTML = parseInt(score_element.innerHTML) + 1;
+}
