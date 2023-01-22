@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Social Diary</title>
+        <meta charset="UTF-8" />
+        <link href="addNote.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <div class="topNavigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#abiut">About </a>
+        <a href="#contact">Contact</a>
+        <a href="logIn">CWL Login</a>
+    </div>
+
+    <body>
+        <div class="color" style="text-align: center;">
+            <img src="Images/default.png" alt="defaultFace">
+            <br><br><br>
+            <p class="choose_color">How do you feel?</p>
+
+            <button class="color_button" id="hopeful" onclick="assignEmotion('hopeful')">Hopeful</button>
+            <button class="color_button" id="sad" onclick="assignEmotion('sad')">Sad</button>
+            <button class="color_button" id="lonely" onclick="assignEmotion('lonely')">Lonely</button>
+            <button class="color_button" id="hopeless" onclick="assignEmotion('hopeless')">Hopeless</button>
+            <button class="color_button" id="stressed" onclick="assignEmotion('stressed')">Stressed</button>
+            <button class="color_button" id="angry" onclick="assignEmotion('angry')">Angry</button>
+            <button class="color_button" id="anxious" onclick="assignEmotion('anxious')">Anxious</button>
+            <button class="color_button" id="worried" onclick="assignEmotion('worried')">Worried</button>
+        </div>
+
+        <div class="story" style="text-align: center;">
+            <p class="story_prompt">I feel <span id="emotion">  ________  </span> because ...</p>
+            <div class="thought" contenteditable></div>
+            <!-- Need to put the link to home page in below button -->
+            <a class="post" href="TODO put a link here to forum page"  target="_blank">Post</a>
+        </div>
+
+        <script src="addNote.js"></script>
+    </body>
+</html>

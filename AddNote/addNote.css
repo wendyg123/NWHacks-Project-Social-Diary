@@ -1,0 +1,189 @@
+/* Add the same emoji color to the background color of the top navigation */
+.topNavigation {
+    background-color: #EAEFF9;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topNavigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topNavigation a:hover {
+    background-color: #002145;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topNavigation a.active {
+    background-color: #FFC645;
+    color: black;
+}
+
+
+body {
+    /* background: #368dda; */
+
+    background: linear-gradient(-45deg, #e8dff5, #f598a8, #fcf4dd, #b3dbd3, #69b7eb);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+
+
+    font-family: copperplate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+}
+
+.color {
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+
+.choose_color {
+    font-size: 30px;
+}
+
+.color_button {
+    margin: 0px auto;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: 2px solid #002145;
+}
+
+/* Setting color of emotion buttons */
+#hopeful {
+    background: #ffc645;
+}
+
+#sad {
+    background: #d1e6ff;
+}
+
+#lonely {
+    background: #8b88ac;
+}
+
+#hopeless {
+    background: #dfa4e9;
+}
+
+#stressed {
+    background: #ff8b49;
+}
+
+#angry {
+    background: #f23d3d;
+}
+
+#anxious {
+    background: #d5eaac;
+}
+
+#worried {
+    background: #eaeff9;
+}
+
+
+.color_button:hover {
+    background: #0b3851;
+    color: white;
+    outline: 2px solid white;
+}
+
+.input_box {
+    width: 50%;
+    height: 150px;
+}
+
+.story_prompt {
+    font-size: 30px;
+} 
+
+#emotion {
+    font-weight: bold;
+}
+
+
+.thought {
+    display:flex;
+    background-color:#F5F5F5;
+    padding:20px;
+    border-radius:30px;
+    width: 50%;
+    margin: 1% auto;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.thought:before,
+.thought:after {
+content:"";
+background-color:#F5F5F5;
+border-radius:50%;
+display:block;
+position:absolute;
+z-index:-1;
+}
+
+.thought:before {
+width:44px;
+height:44px;
+top:-12px;
+left:28px;
+box-shadow:-50px 30px 0 -12px #F5F5F5;
+}
+
+.thought:after {
+bottom:-10px;
+right:26px;
+width:30px;
+height:30px;
+box-shadow:40px -34px 0 0 #F5F5F5,
+           -28px -6px 0 -2px #F5F5F5,
+           -24px 17px 0 -6px #F5F5F5,
+           -5px 25px 0 -10px #F5F5F5;
+
+}
+
+.post {
+    background: #0b3851;
+    color: white;
+    outline: 2px solid white;
+    display: block;
+    height: 40px;
+    width: 70px;
+    border-radius: 15px;
+    margin: 0px auto;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
