@@ -16,8 +16,8 @@
 
     /* Change the color of links on hover */
     .topNavigation a:hover {
-      background-color: #FFC645;
-      color: black;
+      background-color: #002145;
+      color: white;
     }
 
     /* Add a color to the active/current link */
@@ -136,9 +136,11 @@
           padding: 24px;
           text-align: center;
           color: #000;
-          margin: 4% 5%;
+          margin: 4% 7%;
           border-bottom: 20px solid transparent;
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          display: inline-block;
+          align: top;
 
         }
 
@@ -153,6 +155,7 @@
           border-bottom: 20px solid transparent;
           left: 32px;
           bottom: -24px;
+          display: inline-block;
         }
 
         .bubble-bottom-right:before {
@@ -166,6 +169,12 @@
           border-bottom: 20px solid transparent;
           right: 32px;
           bottom: -24px;
+          display: inline-block;
+        }
+
+        .contact{
+        font-size: 100%;
+        background: #002145;
         }
 
       footer {
