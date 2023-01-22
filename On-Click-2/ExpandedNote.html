@@ -2,170 +2,63 @@
 <html lang="en">
 
 <head>
-    <style>
-      /* Add the same emoji color to the background color of the top navigation */
-      .topNavigation {
-      background-color: #EAEFF9;
-      overflow: hidden;
-    }
+    <title>Social Diary</title>
+    <meta charset="UTF-8" />
+    <link href="ExpandedNote.css" rel="stylesheet" type="text/css" />
 
-    /* Style the links inside the navigation bar */
-    .topNavigation a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    /* Change the color of links on hover */
-    .topNavigation a:hover {
-      background-color: #FFC645;
-      color: black;
-    }
-
-    /* Add a color to the active/current link */
-    .topNavigation a.active {
-      background-color: #FFC645;
-      color: black;
-    }
-
-      h2 {
-        text-align: center;
-        border-radius: 10px;
-        border: 1px solid blueviolet;
-        padding: 15px;
-      }
-
-      img {
-        margin-top: 2.5em;
-        border-radius: 50%;
-        width: 30%;
-      }
-
-      p {
-        font-size: 3.2vw;
-        line-height: 1.5;
-        text-align: center;
-      }
-
-      button {
-        width: 35%;
-        background: #FFC645;
-        color: #EAEFF9;
-        border: none;
-        padding: 15px;
-        font-size: 100%;
-        border-radius: 10px;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-        margin: 10px 7%;
-      }
-
-      body{
-      background: black;
-      }
-
-      .thought {
-      display:flex;
-      background-color:#F5F5F5;
-      padding:20px;
-      border-radius:30px;
-      width: 50%;
-      margin: 5% auto;
-      position:relative;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      }
-
-.thought:before,
-.thought:after {
-  content:"";
-  background-color:#F5F5F5;
-  border-radius:50%;
-  display:block;
-  position:absolute;
-  z-index:-1;
-}
-
-
-.thought:before {
-  width:44px;
-  height:44px;
-  top:-12px;
-  left:28px;
-  box-shadow:-50px 30px 0 -12px #F5F5F5;
-}
-.thought:after {
-  bottom:-10px;
-  right:26px;
-  width:30px;
-  height:30px;
-  box-shadow:40px -34px 0 0 #F5F5F5,
-             -28px -6px 0 -2px #F5F5F5,
-             -24px 17px 0 -6px #F5F5F5,
-             -5px 25px 0 -10px #F5F5F5;
-
-}
-
-      footer {
-        text-align: center;
-        font-size: 12px;
-        color: white;
-      }
-
-
-
-
-    </style>
 </head>
 
 <div class="topNavigation">
     <a class="active" href="#home">Home</a>
     <a href="#abiut">About </a>
     <a href="#contact">Contact</a>
+    <a href="logIn">CWL Login</a>
 </div>
 
 
 <body>
 
+    <div style="text-align: center;">
+        <img src="AliceBlueSadFace.png" alt="sadFace">
+    </div>
 
-<div style="text-align: center;">
-    <img src="AliceBlueSadFace.png" alt="sadFace">
-</div>
+    <div class="thought">
+        <p>
+            <mark>I feel worried because ...</mark>
+            <br>
+            School has been super tough lately! <br>
+            I can hardly catch up on any of my courses :( <br>
+            I've also been missing deadlines TT <br>
+        </p>
+    </div>
 
-<div class="thought"> I am worried because ...</div>
-<button>
-    "Instructor"
-</button>
+    <button>
+        Instructor's Answers
+    </button>
 
-<button>
-    "Student"
-</button>
+    <button>
+        Student's Answers
+    </button>
 
 
-<footer>
-    Coded by Celine, Kelly & Wendy
-
-    during nwHacks 2023
-</footer>
-
-<script>
-      function subscribe() {
-        let name = prompt("What is your name?");
-        prompt("What is your email address?");
-
-        alert(
-          "Thanks! We'll be in touch! Meanwhile, don't forget to take care of yourself :)");
-      }
-
-      let button = document.querySelector("button");
-      button.addEventListener("click", subscribe);
+    <div class="bubble bubble-bottom-left" contenteditable> Hi dear! I know school may be difficult during the middle seasons!
+        Please consult your school's academic advising! </div>
+    <div class="bubble bubble-bottom-right" contenteditable>
+        <marquee direction="left">
+            Click here to start off your answer.
+        </marquee>
+    </div>
 
 
 
 
-</script>
+    <footer>
+        Coded by Celine, Kelly & Wendy during nwHacks 2023
+    </footer>
+
+
+    <script src="ExpandedNote.js"></script>
+
 </body>
+
 </html>
