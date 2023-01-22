@@ -7,7 +7,7 @@
 	color: white;
 	display: block;
 	height: 60px;
-	width: 400px;
+	width: 300px;
 	border-radius: 20px;
 	margin: 20px auto;
 	text-decoration: none;
@@ -16,11 +16,9 @@
 	line-height: 60px;
 	font-size: 20px;
 	transition: 0.3s;
+	position: absolute;
 }
 
-.button {
-	background: #eb94d0;
-}
 
 .button:hover {
 	background: #2079b0;
@@ -32,29 +30,7 @@
 	text-decoration: none;
   }
 
-  /* .textarea {
-	width: 150px;
-	height: 150px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: #EFDEB8;
-	font-size: 16px;
-	resize: none;
-  } */
 
-  /* textarea1 {
-	width: 250px;
-	height: 250px;
-	padding: 20px 40px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: blue;
-	font-size: 16px;
-	resize: none;
-  } */
 		
 
 
